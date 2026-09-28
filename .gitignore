@@ -133,3 +133,7 @@ Thumbs.db
 *.nes
 *.ips
 *.bak
+
+# Visual Studio
+*.slnx
+PythonApplication1.py
