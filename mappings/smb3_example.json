@@ -1,25 +1,26 @@
 {
   "regions": [
     {
-      "name": "Example Shuffle Region",
-      "offset": 0,
-      "length": 16,
+      "name": "LevelPointers",
+      "offset": 123456,
+      "length": 256,
       "op": "shuffle",
-      "chunk_size": 2
+      "chunk_size": 2,
+      "_comment": "Replace offset and length with correct values from your ROM disassembly"
     },
     {
-      "name": "Example Randomize Bytes Region",
-      "offset": 16,
-      "length": 8,
-      "op": "randomize_bytes",
-      "allowed": [0, 1, 2, 3]
-    },
-    {
-      "name": "Example Replace Values Region",
-      "offset": 24,
-      "length": 8,
+      "name": "Enemies",
+      "offset": 200000,
+      "length": 1024,
       "op": "replace_values",
-      "mapping": {1: 5, 2: 7, 3: 9}
+      "mapping": {1: 5, 2: 7}
+    },
+    {
+      "name": "Items",
+      "offset": 250000,
+      "length": 512,
+      "op": "randomize_bytes",
+      "allowed": [0, 1, 2, 3, 4, 5]
     }
   ]
 }
