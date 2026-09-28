@@ -1,0 +1,25 @@
+{
+  "regions": [
+    {
+      "name": "Example Shuffle Region",
+      "offset": 0,
+      "length": 16,
+      "op": "shuffle",
+      "chunk_size": 2
+    },
+    {
+      "name": "Example Randomize Bytes Region",
+      "offset": 16,
+      "length": 8,
+      "op": "randomize_bytes",
+      "allowed": [0, 1, 2, 3]
+    },
+    {
+      "name": "Example Replace Values Region",
+      "offset": 24,
+      "length": 8,
+      "op": "replace_values",
+      "mapping": {1: 5, 2: 7, 3: 9}
+    }
+  ]
+}
